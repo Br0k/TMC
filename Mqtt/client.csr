@@ -1,0 +1,33 @@
+Certificate Request:
+    Data:
+        Version: 1 (0x0)
+        Subject: C = FR, L = Limoges, O = TMC, OU = IOT, CN = mqtt.server
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:35:23:d9:e0:64:03:55:bd:7b:57:60:71:8a:f1:
+                    e7:ce:e9:d3:3c:ef:7c:b3:fa:90:c6:3c:71:5f:bb:
+                    ad:3e:81:7a:fb:5d:53:aa:ea:5e:cd:74:88:61:ff:
+                    2e:5e:4c:65:84:f0:34:4c:c2:69:bb:29:c9:e1:5c:
+                    82:3a:bd:57:c8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        Attributes:
+        Requested Extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:3d:7e:3a:3e:c9:95:c0:1a:44:da:28:6f:96:4c:
+         84:dc:d7:a4:cc:90:81:0e:03:c8:92:ae:67:29:6c:0a:11:d3:
+         02:20:34:51:d3:be:59:f5:79:af:33:22:83:3e:14:b0:29:c9:
+         53:57:29:a2:31:66:1c:bd:77:a5:2b:5b:86:b0:1c:d0
+-----BEGIN CERTIFICATE REQUEST-----
+MIIBJzCBzwIBADBRMQswCQYDVQQGEwJGUjEQMA4GA1UEBwwHTGltb2dlczEMMAoG
+A1UECgwDVE1DMQwwCgYDVQQLDANJT1QxFDASBgNVBAMMC21xdHQuc2VydmVyMFkw
+EwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAENSPZ4GQDVb17V2BxivHnzunTPO98s/qQ
+xjxxX7utPoF6+11TqupezXSIYf8uXkxlhPA0TMJpuynJ4VyCOr1XyKAcMBoGCSqG
+SIb3DQEJDjENMAswCQYDVR0TBAIwADAKBggqhkjOPQQDAgNHADBEAiA9fjo+yZXA
+GkTaKG+WTITc16TMkIEOA8iSrmcpbAoR0wIgNFHTvln1ea8zIoM+FLApyVNXKaIx
+Zhy9d6UrW4awHNA=
+-----END CERTIFICATE REQUEST-----

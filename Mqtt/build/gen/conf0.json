@@ -1,0 +1,84 @@
+{
+ "debug": {
+  "level": 3,
+  "factory_reset_gpio": -1,
+  "mbedtls_level": 1
+ },
+ "device": {
+  "id": "esp8266_??????"
+ },
+ "sys": {
+  "wdt_timeout": 30,
+  "atca": {
+   "enable": true,
+   "i2c_addr": 96,
+   "ecdh_slots_mask": 12
+  }
+ },
+ "conf_acl": "*",
+ "i2c": {
+  "enable": true,
+  "freq": 100000,
+  "sda_gpio": 12,
+  "scl_gpio": 14
+ },
+ "mqtt": {
+  "enable": true,
+  "server": "mqtt.server:8883",
+  "user": "esp8266",
+  "pass": "esp8266",
+  "reconnect_timeout_min": 2.0,
+  "reconnect_timeout_max": 60.0,
+  "ssl_cert": "client.crt",
+  "ssl_key": "ATCA:0",
+  "ssl_ca_cert": "ecc.ca.cert.pem",
+  "clean_session": true,
+  "keep_alive": 60,
+  "max_qos": 2,
+  "recv_mbuf_limit": 3072,
+  "pub": "/esp8266"
+ },
+ "mqtt1": {
+  "server": "iot.eclipse.org:1883",
+  "reconnect_timeout_min": 2.0,
+  "reconnect_timeout_max": 60.0,
+  "clean_session": true,
+  "keep_alive": 60,
+  "max_qos": 2,
+  "recv_mbuf_limit": 3072
+ },
+ "rpc": {
+  "enable": true,
+  "max_frame_size": 4096,
+  "max_queue_length": 25,
+  "default_out_channel_idle_close_timeout": 10,
+  "mqtt": {
+   "enable": true,
+   "pub_topic": "%.*s/rpc",
+   "sub_topic": "%.*s/rpc",
+   "sub_wc": true,
+   "qos": 1
+  },
+  "uart": {
+   "baud_rate": 115200,
+   "fc_type": 2
+  }
+ },
+ "wifi": {
+  "ap": {
+   "enable": true,
+   "ssid": "Mongoose_??????",
+   "pass": "Mongoose",
+   "channel": 6,
+   "max_connections": 10,
+   "ip": "192.168.4.1",
+   "netmask": "255.255.255.0",
+   "gw": "192.168.4.1",
+   "dhcp_start": "192.168.4.2",
+   "dhcp_end": "192.168.4.100",
+   "trigger_on_gpio": -1,
+   "keep_enabled": true
+  },
+  "sta_connect_timeout": 30
+ }
+}
