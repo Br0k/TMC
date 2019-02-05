@@ -1,0 +1,50 @@
+{
+  "build_id": "20190128-175943/2.10.0-dirty-master-g01d3f5b73",
+  "build_timestamp": "2019-01-28T17:59:43Z",
+  "name": "Mqtt",
+  "parts": {
+    "boot": {
+      "addr": 0,
+      "cs_sha1": "ee34a8a7cbd178cc3268ca8ee13665c6fd3a8566",
+      "size": 2320,
+      "src": "rboot.bin",
+      "update": false
+    },
+    "boot_cfg": {
+      "addr": 28672,
+      "fill": 255,
+      "size": 4096
+    },
+    "fs": {
+      "addr": 32768,
+      "cs_sha1": "a5f7b9ab8f8599c1fb37d95eb22b60dd8e29b525",
+      "fs_block_size": 4096,
+      "fs_erase_size": 4096,
+      "fs_page_size": 256,
+      "fs_size": 262144,
+      "size": 262144,
+      "src": "fs.bin",
+      "type": "fs"
+    },
+    "fw": {
+      "addr": 1048576,
+      "cs_sha1": "08c0e9e02472fce2a012fd456de4dc42b4776c82",
+      "size": 625216,
+      "src": "Mqtt.bin"
+    },
+    "rf_cal_data": {
+      "addr": 4173824,
+      "fill": 255,
+      "size": 4096
+    },
+    "sys_params": {
+      "addr": 4177920,
+      "cs_sha1": "ff105e66b313201f5b40a2e02b7f00db24022088",
+      "size": 128,
+      "src": "esp_init_data_default_v08.bin",
+      "type": "sys_params"
+    }
+  },
+  "platform": "esp8266",
+  "version": "1.0"
+}

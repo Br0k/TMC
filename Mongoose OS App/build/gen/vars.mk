@@ -1,0 +1,37 @@
+APP=Mqtt
+APP_BIN_LIBS=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mbedtls/lib/esp8266/libmbedtls.a /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mongoose/lib/esp8266/libmongoose.a
+APP_CFLAGS=-DMBEDTLS_ECP_ATCA=1 -DMBEDTLS_USER_CONFIG_FILE=\"mbedtls_platform_config.h\" -DMBEDTLS_X509_CA_CHAIN_ON_DISK=1 -DMGOS_ENABLE_RPC_CHANNEL_HTTP=1 -DMGOS_ENABLE_SYS_SERVICE=1 -DMGOS_HAVE_ATCA=1 -DMGOS_HAVE_CA_BUNDLE=1 -DMGOS_HAVE_CORE=1 -DMGOS_HAVE_I2C=1 -DMGOS_HAVE_MBEDTLS=1 -DMGOS_HAVE_MONGOOSE=1 -DMGOS_HAVE_MQTT=1 -DMGOS_HAVE_RPC_COMMON=1 -DMGOS_HAVE_RPC_MQTT=1 -DMGOS_HAVE_RPC_SERVICE_ATCA=1 -DMGOS_HAVE_RPC_SERVICE_CONFIG=1 -DMGOS_HAVE_RPC_SERVICE_FS=1 -DMGOS_HAVE_RPC_UART=1 -DMGOS_HAVE_VFS_COMMON=1 -DMGOS_HAVE_VFS_DEV_PART=1 -DMGOS_HAVE_VFS_FS_SPIFFS=1 -DMGOS_HAVE_WIFI=1 -DMGOS_WIFI_ENABLE_AP_STA=1 -DMG_ENABLE_DNS=1 -DMG_ENABLE_DNS_SERVER=1 -DMG_ENABLE_MQTT=1 -DMG_ENABLE_SNTP=1 -DMG_ENABLE_SSL=1 -DMG_SSL_IF=MG_SSL_IF_MBEDTLS -DMG_SSL_IF_MBEDTLS_FREE_CERTS=1
+APP_CONF_SCHEMA=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/gen/mos_conf_schema.yml
+APP_CXXFLAGS=-DMBEDTLS_ECP_ATCA=1 -DMBEDTLS_USER_CONFIG_FILE=\"mbedtls_platform_config.h\" -DMBEDTLS_X509_CA_CHAIN_ON_DISK=1 -DMGOS_ENABLE_RPC_CHANNEL_HTTP=1 -DMGOS_ENABLE_SYS_SERVICE=1 -DMGOS_HAVE_ATCA=1 -DMGOS_HAVE_CA_BUNDLE=1 -DMGOS_HAVE_CORE=1 -DMGOS_HAVE_I2C=1 -DMGOS_HAVE_MBEDTLS=1 -DMGOS_HAVE_MONGOOSE=1 -DMGOS_HAVE_MQTT=1 -DMGOS_HAVE_RPC_COMMON=1 -DMGOS_HAVE_RPC_MQTT=1 -DMGOS_HAVE_RPC_SERVICE_ATCA=1 -DMGOS_HAVE_RPC_SERVICE_CONFIG=1 -DMGOS_HAVE_RPC_SERVICE_FS=1 -DMGOS_HAVE_RPC_UART=1 -DMGOS_HAVE_VFS_COMMON=1 -DMGOS_HAVE_VFS_DEV_PART=1 -DMGOS_HAVE_VFS_FS_SPIFFS=1 -DMGOS_HAVE_WIFI=1 -DMGOS_WIFI_ENABLE_AP_STA=1 -DMG_ENABLE_DNS=1 -DMG_ENABLE_DNS_SERVER=1 -DMG_ENABLE_MQTT=1 -DMG_ENABLE_SNTP=1 -DMG_ENABLE_SSL=1 -DMG_SSL_IF=MG_SSL_IF_MBEDTLS -DMG_SSL_IF_MBEDTLS_FREE_CERTS=1
+APP_FS_FILES=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/ca-bundle/fs/ca.pem /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/fs/client.crt /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/fs/client.key /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/fs/ecc.ca.cert.pem /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/fs/index.html
+APP_INCLUDES=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/i2c/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mbedtls/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mbedtls/include/esp8266 /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mbedtls/mbedtls/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/include/esp8266 /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mongoose/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-dev-part/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/include/spiffs /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/include/esp8266 /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/core/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/core/include/esp8266 /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mqtt/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-common/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-mqtt/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-service-config/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-service-fs/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-uart/include /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/wifi/include
+APP_SOURCES=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/src/main.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/gen/mgos_deps_init.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/i2c/src/mgos_i2c.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/i2c/src/common_gpio/mgos_i2c_gpio.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/src/mgos_atca.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/atca_cfgs.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/atca_command.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/atca_device.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/atca_iface.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/basic/atca_basic.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/basic/atca_helpers.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/atca/cryptoauthlib/lib/host/atca_host.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/mgos_vfs.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/mgos_vfs_dev.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/mgos_vfs_internal.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/esp8266/esp_flash_writer.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/esp8266/esp_fs.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-common/src/esp8266/esp_vfs_dev_sysflash.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-dev-part/src/mgos_vfs_dev_part.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/mgos_vfs_fs_spiffs.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/spiffs/spiffs_cache.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/spiffs/spiffs_check.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/spiffs/spiffs_gc.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/spiffs/spiffs_hydrogen.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/vfs-fs-spiffs/src/spiffs/spiffs_nucleus.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/core/src/mgos_core.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/core/src/esp8266/esp_rboot.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/mqtt/src/mgos_mqtt.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-common/src/mg_rpc.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-common/src/mg_rpc_channel.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-common/src/mg_rpc_channel_http.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-common/src/mgos_rpc.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-mqtt/src/mgos_rpc_channel_mqtt.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-service-atca/src/mgos_atca_service.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-service-config/src/mgos_service_config.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-service-fs/src/mgos_service_filesystem.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/rpc-uart/src/mgos_rpc_channel_uart.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/wifi/src/mgos_wifi.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/wifi/src/mjs_wifi.c /home/fonfreyde/TMC/Projet/ESP8266/Mqtt/deps/wifi/esp8266/src/esp_wifi.c
+APP_VERSION=1.0
+BOARD=
+BUILD_DIR=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/objs
+FFI_SYMBOLS=
+FS_STAGING_DIR=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/fs
+FW_DIR=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/fw
+GEN_DIR=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/gen
+MANIFEST_FINAL=/home/fonfreyde/TMC/Projet/ESP8266/Mqtt/build/gen/mos_final.yml
+MGOS_ENABLE_I2C_GPIO=1
+MGOS_HAVE_ATCA=1
+MGOS_HAVE_CA_BUNDLE=1
+MGOS_HAVE_CORE=1
+MGOS_HAVE_I2C=1
+MGOS_HAVE_MBEDTLS=1
+MGOS_HAVE_MONGOOSE=1
+MGOS_HAVE_MQTT=1
+MGOS_HAVE_RPC_COMMON=1
+MGOS_HAVE_RPC_MQTT=1
+MGOS_HAVE_RPC_SERVICE_ATCA=1
+MGOS_HAVE_RPC_SERVICE_CONFIG=1
+MGOS_HAVE_RPC_SERVICE_FS=1
+MGOS_HAVE_RPC_UART=1
+MGOS_HAVE_VFS_COMMON=1
+MGOS_HAVE_VFS_DEV_PART=1
+MGOS_HAVE_VFS_FS_SPIFFS=1
+MGOS_HAVE_WIFI=1
+MGOS_PATH=/mongoose-os
+MGOS_WIFI_ENABLE_AP_STA=1
+PLATFORM=esp8266
