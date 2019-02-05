@@ -1,6 +1,0 @@
-{
-  "arch": "esp8266",
-  "platform": "esp8266",
-  "app_name": "Mqtt",
-  "build_time_ms": 7920
-}
