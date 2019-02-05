@@ -6,7 +6,7 @@
 3. Transfère des données par LoRa (utilisant un Dragino hat) avec chiffrement en AES vers un second Raspberry Pi.
 
 ## Sources
-MQTT broker : Mosquitto (https://mosquitto.org/download/)
-Programmation ESP8266 et exploitation du composant ATECC508 : Mongoose OS (https://mongoose-os.com/)
-LoRa communications : Radiohead (https://github.com/hallard/RadioHead)
+MQTT broker : Mosquitto (https://mosquitto.org/download/).
+Programmation ESP8266 et exploitation du composant ATECC508 : Mongoose OS (https://mongoose-os.com/).
+LoRa communications : Radiohead (https://github.com/hallard/RadioHead).
 
