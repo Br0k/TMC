@@ -184,6 +184,7 @@ int main (int argc, const char* argv[] )
           digitalWrite(RF_LED_PIN, HIGH);
 #endif
           // Should be a message for us now
+          // When recieving a message, we have to decipher it useing the hardcoded AES key
           uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
           uint8_t len  = sizeof(buf);
           uint8_t from = rf95.headerFrom();
@@ -193,7 +194,8 @@ int main (int argc, const char* argv[] )
           int8_t rssi  = rf95.lastRssi();
           
           if (rf95.recv(buf, &len)) {
-
+            
+            // hardcoded AES key
             char* userkey = "the_cake_is_alie";
            
             unsigned char IV[BLOCK_SIZE];
