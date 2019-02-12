@@ -86,14 +86,12 @@ void sig_handler(int sig)
   exit(0) ;
 }
 
+// MQTT listener for recieved messages
 void my_message_callback(struct mosquitto *mosq, void *userdata, const struct mosquitto_message *message)
-{
-	printf("Recieved something\n");
-
-
-
+{	
 	if(message->payloadlen){
-
+		// when recieving a message through MQTT, we cipher it using the hardcoded AES key
+		// then we send the message with LoRa
 		printf("%s %s\n", message->topic, message->payload);
 		uint8_t* data = (uint8_t*) message->payload;
 		const unsigned char* dataLen = (const unsigned char*) message->payload;
@@ -120,11 +118,11 @@ void my_message_callback(struct mosquitto *mosq, void *userdata, const struct mo
 
    		uint8_t len = sizeof(dataEnc);
     
-	    printf("Sending %02d bytes to node #%d => ", len, RF_GATEWAY_ID );
-	    printbuffer((uint8_t*) dataEnc, len);
-	    printf("\n" );
-	    rf95.send(dataEnc, len);
-	    rf95.waitPacketSent();
+		printf("Sending %02d bytes to node #%d => ", len, RF_GATEWAY_ID );
+		printbuffer((uint8_t*) dataEnc, len);
+		printf("\n" );
+		rf95.send(dataEnc, len);
+		rf95.waitPacketSent();
 
 
 	}else{
