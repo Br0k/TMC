@@ -99,6 +99,7 @@ void my_message_callback(struct mosquitto *mosq, void *userdata, const struct mo
 
 		const size_t encslength = ((message->payloadlen + BLOCK_SIZE) / BLOCK_SIZE) * BLOCK_SIZE;
 
+		// hardcoded AES key
 		char* userkey = "the_cake_is_alie";
 
 		unsigned char IV[BLOCK_SIZE];
